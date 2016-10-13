@@ -1,24 +1,21 @@
 <html>
-<body>
-
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-<script src="build/jquery.runner.js"></script> 
-
- 
-<div id="runner"></div>
-
-
-<script> 
-$('#runner').runner({ 
-    countdown: true, 
-    startAt: 30000, 
-    stopAt: 0 
-}).on('runnerFinish', function(eventObject, info) { 
-    alert('Finished!'); 
-});  
-</script>  
- 
- 
- 
+<head>
+<title></title>
+<script type="text/javascript">
+var counter = 0
+var timer;
+function countUP () {
+ counter = counter + 1;//increment the counter by 1
+ //display the new value in the div
+ document.getElementById("timer_container").innerHTML = counter;
+ }
+</script>
+</head>
+<body onload='timer=setInterval("countUP()", 1000 );'>
+<div id="timer_container">0</div>
+<div>
+<button onclick='clearInterval(timer);'>Stop Timer</button>
+<button onclick='timer=setInterval("countUP()", 1000 );'>Continue Timer</button>
+</div>
 </body>
 </html>
