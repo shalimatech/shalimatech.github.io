@@ -1,6 +1,7 @@
 <html>
 <head>
-<title></title>
+
+<title>Counter</title>
 <script type="text/javascript">
 var counter = 0
 var timer;
@@ -11,7 +12,7 @@ function countUP () {
  }
 </script>
 </head>
-<body onload='timer=setInterval("countUP()", 1000 );'>
+<body onload='timer=setInterval("countUP()", 1000 );'  style="background-color:powderblue;">
 <div id="timer_container">0</div>
 <div>
 <button onclick='clearInterval(timer);'>Stop Timer</button>
