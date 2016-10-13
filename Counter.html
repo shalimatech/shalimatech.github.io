@@ -1,22 +1,24 @@
 <html>
 <body>
-<span class=".integers">12345</span> 
-<span class=".floats">123.45</span> 
-<span class=".numbers-with-commas">12,345.00</span>
- 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>  
-<script src="js/jquery.counterup.min.js"></script> 
 
-<script src="waypoints.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+<script src="build/jquery.runner.js"></script> 
+
  
+<div id="runner"></div>
+
+
 <script> 
-jQuery(document).ready(function( $ ) { 
-$('span').counterUp({ 
-delay: 10, // the delay time in ms 
-time: 1000 // the speed time in ms 
-}); 
-}); 
-</script> 
-
+$('#runner').runner({ 
+    countdown: true, 
+    startAt: 30000, 
+    stopAt: 0 
+}).on('runnerFinish', function(eventObject, info) { 
+    alert('Finished!'); 
+});  
+</script>  
+ 
+ 
+ 
 </body>
 </html>
