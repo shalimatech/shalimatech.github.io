@@ -32,7 +32,26 @@ h1 {
 @keyframes mymove {
     from {background-color: red;}
     to {background-color: blue;}
-}	
+}
+	
+	#myDIV1 {
+    width: 900px;
+    height: 50px;
+    border: 2px solid black;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {border: 65px solid lightblue;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {border: 65px solid lightblue;}
+}
+
 </style>
   </head>
   <body>  
@@ -40,6 +59,7 @@ h1 {
 	<h1>Welcome to my website</h1>        
         <h2>My Website</h2>
         <p></p>
+	 <div id="myDIV1"></div>     
       </header>
       <div id="banner">
         <span id="logo"></span>
@@ -54,7 +74,8 @@ h1 {
 <marquee direction="down" width="250" height="200" behavior="alternate" style="border:solid">
 <marquee behavior="alternate"> <font color ="blue" >WELCOME</font>
 </marquee>
-	      </marquee>  
+	      </marquee> 
+	      
 <h3>About me</h3>
 <p>Please visit my website  <a href="/Counter.html">Click here</a></p>
 
