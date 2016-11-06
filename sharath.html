@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>my website</title>
+</head>
+
+<style type="text/css">
+
+body {
+    background-color: Silver;
+}
+h1 {
+    background-color: Grey;
+}
+
+p {
+    background-color: grey;
+        font-size: 20px;
+}
+p.thick {
+    font-weight: bold;
+}
+
+ul {
+list-style: none;padding: 0px;margin: 0px;
+font-size: 20px;
+} 
+ul li {
+display: block;position: relative;float: left;border:1px solid #000
+} 
+li ul {
+display: none;
+} 
+ul li a {
+display: block;background: #000;padding: 5px 10px 5px 10px;text-decoration: none;
+white-space: nowrap;color: green;
+} 
+ul li a:hover {
+background: #f00;
+} 
+li:hover ul {
+display: block; position: absolute;
+} 
+li:hover li {
+float: none;
+} 
+li:hover a {
+background: #f00;
+} 
+li:hover li a:hover {
+background: #000;
+} 
+#drop-nav li ul li {
+border-top: 0px;
+}
+</style>
+
+<header>
+<h1>my cool web site</h1>
+</header>
+
+<div>
+
+<ul id="drop-nav">
+<li><a href="#" >Home</a></li>
+<li><a href="#" >Cooking Blog</a>
+<ul>
+     <li><a href="#">South Indian</a></li>
+     <li><a href="#">North Indian</a></li>
+     <li><a href="#">Italian</a></li>
+   </ul>
+   </li>
+   
+  <li><a href="#">Manual testing</a>
+    <ul>
+      <li><a href="#">Web testing</a></li>
+      <li><a href="#">Desktop application testing</a></li>
+      <li><a href="#">Mainframe testing</a></li>
+    </ul>  
+  </li>
+  
+    <li><a href="#">Automation testing</a>
+    <ul>
+      <li><a href="#">QTP/UFT</a></li>
+      <li><a href="#">Selenium WebDriver</a></li>
+      <li><a href="#">RobotFramework</a></li>
+          <li><a href="#">TestNG</a></li>
+    </ul>  
+  </li>
+    
+  <li><a href="#">Web Design Notes</a>
+    <ul>
+      <li><a href="#">HTML5</a></li>
+      <li><a href="#">CSS3</a></li>
+          <li><a href="#">JQuery</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </li>
+
+</ul>
+<body>
+
+<br><br><br>
+<p> test para </p>
+
+</body>
+<footer>
+</footer>
+</html
