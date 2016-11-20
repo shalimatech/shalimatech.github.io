@@ -48,13 +48,5 @@ background: #000;
 border-top: 0px;
 }
 
-.webuifooter {
-    height:100vh;
-    display:flex;
-    flex-direction: column;
-}
-header, footer {
-    height: 30px;
-}
 
 </style>
