@@ -67,25 +67,13 @@ p.page {
   -webkit-transform: translate3d(0, 0, 0);
 }
 	
-	
-@media screen and (max-device-width: 180px) and (orientation:landscape) {
-  .stage-left {
-    left: 180px;
-  }
 
-  .stage-right {
-    left: 180px;
-  }
 
-  .page {
-    width: 180px;
-  }
-}
 	
 </style>
 
 </head>
-  <body>  
+  <body onload="setTimeout(function() { window.scrollTo(0, 1) }, 80);">  
       <header>	
  
             <ul class="menu">
